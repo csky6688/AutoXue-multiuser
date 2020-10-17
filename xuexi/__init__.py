@@ -721,7 +721,7 @@ class App(Automation):
             last_content = init_content
             num += 1
         # 更新后挑战答题需要增加一次返回
-        self.safe_back('share_page -> quiz')  # 发现部分模拟器返回无效
+        self.safe_back('zhengshangyou -> zsy_start')  # 发现部分模拟器返回无效
         return num
 
     def _zhengshangyou_fast_cycle(self):
