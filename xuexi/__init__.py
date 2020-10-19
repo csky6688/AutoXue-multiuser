@@ -696,7 +696,15 @@ class App(Automation):
                     time.sleep(5)
                     break
                 except:
-                    continue
+                    try:
+                        self.driver.find_element_by_xpath('//*[@text="知道了"]').click()
+                        self.safe_click('//*[@text="知道了"]')
+                        time.sleep(2)
+                        logger.info(f"刷分逛！超过30次了，别再刷了")
+                        self.safe_back('zhengshangyou -> zsy_start')  # 发现部分模拟器返回无效
+                        return
+                    except:
+                        break
             init_content = content
             if content == last_content:
                 # logger.info(f'等待题目刷新！')
@@ -748,8 +756,15 @@ class App(Automation):
                     time.sleep(5)
                     break
                 except:
-                    logger.info(f'获取题目出错，睡了半秒')
-                    continue
+                    try:
+                        self.driver.find_element_by_xpath('//*[@text="知道了"]').click()
+                        self.safe_click('//*[@text="知道了"]')
+                        time.sleep(2)
+                        logger.info(f"刷分逛！超过30次了，别再刷了")
+                        self.safe_back('zhengshangyou -> zsy_start')  # 发现部分模拟器返回无效
+                        return
+                    except:
+                        break
             if content == last_content:  # 如果没有刷到新的题目
                 if not option_click:  # 也没有点选答案，回去继续刷新题目
                     continue
