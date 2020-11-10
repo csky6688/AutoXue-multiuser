@@ -7,11 +7,12 @@ tg群：https://t.me/Autoxue_Chat
 
 # 使用方法，一定要先读！！
 
+
 1、安装雷电模拟器，默认设置即可。雷电模拟器就用最新的4.0，不要用其他模拟器了。
 
-2、安装安卓sdk或者按照ADB，并配置环境变量。adb安装教程：https://zhuanlan.zhihu.com/p/140828682
+2、安装安卓sdk或者安装ADB，并配置环境变量。adb安装教程：https://blog.csdn.net/laofashi2015/article/details/83307733; 如果你配置好环境变量了，cmd里输入adb version 会有版本号显示。
 
-3、用户名在default.ini里配置，可以配置多用户，也可以单用户。同时要配置雷电模拟器可执行文件所在路径，一定要配置！！
+3、用户名在文件夹config/default.ini里配置，可以配置多用户，也可以单用户。同时要配置雷电模拟器可执行文件所在路径，一定要配置！！
 
 4、如果是新的模拟器第一次登录，必须手动提前登录用一次，把学习强国APP使用说明提示刷没了，否则app的操作提示会导致程序崩溃；
 
@@ -19,9 +20,7 @@ tg群：https://t.me/Autoxue_Chat
 
 6、2.0版本没有开源，python编译后总是被360误杀，建议添加信任列表，目前看win10自带defender检测没问题。
 
-7、运行xuexi文件夹中的exe。
+7、运行模拟器十分卡顿的问题，是你没开VT，教程：https://www.yeshen.com/faqs/SklVHWleZ
 
-
-
-最后，运行xuexi文件夹下的exe即可。
+8、运行xuexi文件夹中的exe。
 
