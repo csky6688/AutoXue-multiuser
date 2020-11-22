@@ -53,3 +53,4 @@ tg群：https://t.me/Autoxue_Chat
 2、专项答题支持下滑找新的未作题目，需要default.ini配置，打开开关：special_down = enable
 
 3、针对系统升级做了若干bug修复。
+
